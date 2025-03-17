@@ -4,61 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profil Biodata</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-        .menu {
-            background-color: #333;
-            padding: 10px;
-            color: white;
-        }
-        .menu a {
-            color: white;
-            margin: 15px;
-            text-decoration: none;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            padding: 20px;
-        }
-        .welcome {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            text-align: left;
-        }
-        .welcome img {
-            width: 300px;
-            height: auto;
-        }
-        .biodata-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
-        .biodata-table, .biodata-table th, .biodata-table td {
-            border: 1px solid black;
-        }
-        .biodata-table th, .biodata-table td {
-            padding: 10px;
-        }
-        .portfolio {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 20px;
-        }
-        .portfolio .project {
-            width: 30%;
-            border: 1px solid #ccc;
-            padding: 10px;
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="menu">
@@ -69,28 +15,25 @@
     
     <div class="container">
         <div class="welcome">
-            <div>
+            <div class="welcome-text">
                 <h2>Selamat Datang di Website Saya</h2>
                 <p>Ini adalah contoh header dengan dua kolom. Kolom kiri berisi teks seperti ini.</p>
+                <button>Pelajari Lebih Lanjut</button>
             </div>
-            <img src="https://via.placeholder.com/600x400" alt="Gambar Placeholder">
+            <img src="https://via.placeholder.com/300x400" alt="Gambar Profil">
         </div>
         
-        <h2>About Me</h2>
-        <table class="biodata-table">
-            <tr>
-                <td>Full Name</td>
-                <td>Education</td>
-                <td>Pekerjaan</td>
-            </tr>
-            <tr>
-                <td>Contact</td>
-                <td>Hobi</td>
-                <td>Alamat</td>
-            </tr>
-        </table>
+        <h2 class="section-title">About Me</h2>
+        <div class="biodata">
+            <div class="biodata-item"><span>Full Name:</span> Muhammad Faisal Ashshidiq</div>
+            <div class="biodata-item"><span>Education:</span> D4(Sarjana Terapan) Informatika</div>
+            <div class="biodata-item"><span>Pekerjaan:</span> </div>
+            <div class="biodata-item"><span>Contact:</span> sidiqfaisal30@gmail.com</div>
+            <div class="biodata-item"><span>Hobi:</span> Menganalisa, uji coba(eksperimen)</div>
+            <div class="biodata-item"><span>Alamat:</span> Bandung, Indonesia</div>
+        </div>
         
-        <h2>Portofolio</h2>
+        <h2 class="section-title">Portofolio</h2>
         <div class="portfolio">
             <div class="project">
                 <img src="https://via.placeholder.com/350x200" alt="Project 1">
